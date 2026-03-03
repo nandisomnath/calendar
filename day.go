@@ -1,9 +1,9 @@
 package calendar
 
-type Day int
+type WeekDay int
 
 const (
-	SUNDAY Day = iota + 1
+	SUNDAY WeekDay = iota
 	MONDAY
 	TUESDAY
 	WEDNESDAY

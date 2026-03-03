@@ -1,33 +1,25 @@
 package calendar
 
-
-
 type Month int
 
-
-
 const (
-	JANUARY Month = iota +1
+	JANUARY Month = iota + 1
 	FEBRUARY
-	MARCH 
-	APRIL 
-	MAY 
-	JUNE 
-	JULY 
-	AUGUST 
-	SEPTEMBER 
-	OCTOBER 
-	NOVEMBER 
-	DECEMBER 
+	MARCH
+	APRIL
+	MAY
+	JUNE
+	JULY
+	AUGUST
+	SEPTEMBER
+	OCTOBER
+	NOVEMBER
+	DECEMBER
 )
-
-
 
 // Returns the days number
 // year - is need to determine number of days for february
 func getDayNumber(month Month, year int) int {
-
-
 
 	switch month {
 	case JANUARY:
@@ -60,4 +52,3 @@ func getDayNumber(month Month, year int) int {
 	}
 	return -1
 }
-

@@ -10,7 +10,10 @@ func IsLeap(year int) bool {
 	return false
 }
 
-
-func Weekday(day Day, month Month, year int) string {
-	return ""
+func GetWeekDay(day int, month Month, year int) WeekDay {
+	eDay := THURSDAY
+	days := SinceEpoch(day, month, year)
+	extra := days % 7
+	extra = (int(eDay) + extra) % 7
+	return WeekDay(extra)
 }
