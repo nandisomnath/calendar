@@ -11,6 +11,6 @@ func IsLeap(year int) bool {
 }
 
 
-func weekday()  {
-	
+func Weekday(day Day, month Month, year int) string {
+	return ""
 }
